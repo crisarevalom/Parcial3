@@ -1,0 +1,48 @@
+form#form-principal
+    .field.is-horizontal
+        .field-label.is-normal.is-small
+            label.label(for="modelo") modelo: 
+        .field-body
+            .field.has-addons
+                p.control.is-expanded
+                    input#name.input.is-small.is-rounded.is-primary(type='text', placeholder='' name='modelo')
+            .field-label.is-normal.is-small
+                label.label.is-small(for="marca") marca:
+            .field.has-addons
+                p.control.is-expanded
+                    input#code.input.is-small.is-rounded.is-primary(type='text', placeholder='' name='marca')
+    
+            .field-label.is-normal.is-small
+                label.label(for="color") color:
+        
+            .field.has-addons
+                p.control.is-expanded
+                    input#capacity.input.is-small(type='text', placeholder='' name='color')
+
+            .field-label.is-normal.is-small
+                label.label(for="size") size:
+        
+            .field.has-addons
+                p.control.is-expanded
+                    input#capacity.input.is-small(type='text', placeholder='' name='size')  
+
+            .field-label.is-normal.is-small
+                label.label(for="puertas") puertas:
+        
+            .field.has-addons
+                p.control.is-expanded
+                    input#capacity.input.is-small(type='text', placeholder='' name='puertas')  
+        
+    .field.is-horizontal
+        .field-label
+        .field-body
+            .field.is-grouped
+                .control       
+                    button#btn-principal.button.is-small.is-success.is-primary Crear
+                .control       
+                    button#btn-actualizar.button.is-small.is-hidden editar
+            
+                p.control.is-expanded
+                    input#filtros.input.is-small.is-rounded.is-primary(placeholder="Buscar por modelo")
+                p.control
+                    a#btn-buscar.button.is-small.is-info.is-rounded Buscar

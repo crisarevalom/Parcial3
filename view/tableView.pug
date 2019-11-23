@@ -1,0 +1,19 @@
+extends layout
+
+block header
+
+block content
+    section.section#formulario.container.has-background-grey-lighter
+            include form
+   
+           
+    section.section#lista.container
+        .table-container
+            include formPage
+        
+
+
+
+block scripts
+    script(src="/javascript/admin_labs.js")
+    script(src="https://cdn.jsdelivr.net/npm/sweetalert2@9")
